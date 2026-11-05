@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         architecture: [x86_64, arm64]
-        python-version: ['3.11', '3.12', '3.13', '3.14']
+        python-version: ['3.12', '3.13', '3.14']
         include:
           - architecture: x86_64
             runner: ubuntu-latest
@@ -72,4 +72,4 @@ jobs:
             > [!IMPORTANT]
             > Connect with `extension_directory=/opt/duckdb_extensions` and `home_directory=/tmp` before `LOAD mssql`.
 
-            Choose `duckdb-mssql-python-<version>-<arch>.zip` matching your Lambda Python runtime (3.11–3.14) and architecture (x86_64 / arm64).
+            Choose `duckdb-mssql-python-<version>-<arch>.zip` matching your Lambda Python runtime (3.12–3.14) and architecture (x86_64 / arm64).

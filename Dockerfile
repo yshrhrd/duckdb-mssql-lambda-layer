@@ -7,7 +7,7 @@ ARG DUCKDB_VERSION=
 
 # Install duckdb into the layer's Python path
 RUN if [ -n "$DUCKDB_VERSION" ]; then spec="duckdb==$DUCKDB_VERSION"; else spec="duckdb"; fi \
-    && pip3 install "$spec" --upgrade --no-cache-dir --target /opt/python
+    && pip3 install "$spec" --upgrade --no-cache-dir --only-binary=:all: --target /opt/python
 
 # Pre-install the mssql community extension (native TDS, no ODBC required).
 # Lambda's filesystem is read-only except /tmp, so the extension is bundled in the layer.

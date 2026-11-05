@@ -13,7 +13,7 @@ docker run --rm -v "$(pwd):/out" duckdb-mssql cp /layer.zip /out/duckdb-mssql-py
 ```
 
 - `--platform linux/arm64` for arm64 layers.
-- `PYTHON_VERSION`: 3.11 – 3.14.
+- `PYTHON_VERSION`: 3.12 – 3.14 (Amazon Linux 2023 based runtimes; 3.11 is Amazon Linux 2 and unsupported by recent duckdb wheels).
 - Optional `--build-arg DUCKDB_VERSION=1.4.4` to pin duckdb.
 
 ## Release
