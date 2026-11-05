@@ -1,0 +1,15 @@
+duckdb-mssql-lambda-layer
+Copyright 2026 yshrhrd
+
+This product is licensed under the Apache License, Version 2.0.
+
+The build definitions (Dockerfile, GitHub Actions workflow, tests) are adapted from:
+
+  yshrhrd/pyodbc-mssql-lambda-layer-gconv-extra
+  https://github.com/yshrhrd/pyodbc-mssql-lambda-layer-gconv-extra
+  Licensed under the Apache License, Version 2.0
+
+which is in turn based on:
+
+  davidcomerford/pyodbc-mssql-lambda-layer
+  https://github.com/davidcomerford/pyodbc-mssql-lambda-layer
